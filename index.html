@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOWLS MOVING CASTLE</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* CSS code for hover effect */
+        ul li a:hover {
+            color: #FF5733; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo" height="121px"></a>
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CHARACTERS</a></li>
+            </ul>    
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <br>
+            <h2>A heart's A heavy burden</h2>
+            <p>HOWL'S MOVING CASTLE,2004</p>
+            <P>“In the land of Ingary, where such things as <br>seven-league boots and cloaks of invisibility really exist,
+            <br> it is quite a misfortune to be born the eldest of three.”</P>
+            <a href="#" id="soonLink">point here</a>
+            <div id="hiddenParagraph" style="display: none;">
+            <p>Sophie (Emily Mortimer) has an uneventful life at her late father's hat shop,but all that changes when she befriends wizard Howl (Christian Bale), who lives in a magical flying castle. However, the evil Witch of Waste (Lauren Bacall) takes issue with their budding relationship and casts a spell on young Sophie, which ages her prematurely. Now Howl must use all his magical talents to battle the jealous hag and return Sophie to her former youth and beauty.</p>
+            </div>
+        </div>
+        <div class="subscribeForm">
+            <h3 style="color: #7a1712">Subscribe to Our Page</h3>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="subscribe()">Subscribe</button>
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="howl.jpg" height="90px" width="111px" title="Wizard Howl"></li>
+            <li><img src="sophie.png" height="90px" width="111px" title="Sophie Hatter"></li>
+            <li><img src="Calcifer.webp" height="90px" width="111px" title="Calcifer"></li>
+            <li><img src="head.webp" height="90px" width="111px" title="Kakashi no Kabu"></li>
+            <li><img src="hin.webp" height="90px" width="111px" title="Hin"></li>
+            <li><img src="lettie.webp" height="90px" width="111px" title="Lettie"></li>
+            <li><img src="witch.webp" height="90px" width="111px" title="Witch of the Waste"></li>
+            <li><img src="Markl.webp" height="90px" width="111px" title="Markl"></li>
+
+        </ul>
+        
+        <UL class="sci">
+            <li><a href="#"><img src="fb.png" height="38px" ></a></li>
+            <li><a href="#"><img src="twit.png" height="38px"></a></li>
+            <li><a href="#"><img src="finalinsta.png" height="38px"></a></li>
+        </UL>
+    </section>
+    </div>    
+    <script>
+        function subscribe() {
+            var email = document.getElementById("email").value;
+            alert("Subscribe with Email: " + email);
+        }
+        const soonLink = document.getElementById("soonLink");
+        const hiddenParagraph = document.getElementById("hiddenParagraph");
+
+        soonLink.addEventListener("mouseover", function() {
+         hiddenParagraph.style.display = "block";
+        });
+
+        soonLink.addEventListener("mouseout", function() {
+        hiddenParagraph.style.display = "none";
+        });
+    </script>
+      </html>
+</body>
+</script>
+</html>    
